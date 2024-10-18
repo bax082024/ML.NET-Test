@@ -3,12 +3,16 @@ using Microsoft.ML.Data;
 using System;
 
 
-namespace ML.NET_Test;
-
-class Program
+namespace HousingPricePrediction
 {
+
+
+
+    class Program
+  {
     static void Main(string[] args)
     {
         Console.WriteLine("Hello, World!");
     }
+  }
 }
