@@ -1,4 +1,9 @@
-﻿namespace ML.NET_Test;
+﻿using Microsoft.ML;
+using Microsoft.ML.Data;
+using System;
+
+
+namespace ML.NET_Test;
 
 class Program
 {
