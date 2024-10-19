@@ -7,9 +7,6 @@ using System.Security.Cryptography.X509Certificates;
 
 namespace HousingPricePrediction
 {
-
-
-
     class Program
   {
     static void Main(string[] args)
@@ -21,8 +18,6 @@ namespace HousingPricePrediction
       var pipeline = context.Transforms.Concatenate("Features", new[] { "Rooms", "Size" })
         .Append(context.Transforms.NormalizeMinMax("Features"))
         .Append(context.Regression.Trainers.FastTree(labelColumnName: "Price"));
-
-
 
         var model = pipeline.Fit(dataView);
 
@@ -36,7 +31,6 @@ namespace HousingPricePrediction
         EvaluateModel(context, model, dataView);
     }
 
-
     public static void EvaluateModel(MLContext context, ITransformer model, IDataView data)
     {
         var predictions = model.Transform(data);
@@ -47,20 +41,9 @@ namespace HousingPricePrediction
     }
   }
 
-
   public class HousingPrediction
   {
     [ColumnName("Score")]
     public float Price { get; set; }
   }
-
-
-
-        
-
-
-
-
-    
-  
 }
