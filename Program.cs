@@ -19,6 +19,10 @@ namespace HousingPricePrediction
       var pipeline = context.Transforms.Concatenate("Feature", new[] { "Rooms", "Size"})
         .Append(context.Regression.Trainers.Sdca(labelColumnName: "Price", maximumNumberOfIterations: 100));
 
+        var model = pipeline.Fit(dataView);
+
+        
+
 
 
 
