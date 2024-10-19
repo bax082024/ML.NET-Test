@@ -21,6 +21,8 @@ namespace HousingPricePrediction
 
         var model = pipeline.Fit(dataView);
 
+        var predictionEngine = context.Model.CreatePredictionEngine<HousingData, HousingPricePrediction>(model);
+
         
 
 
