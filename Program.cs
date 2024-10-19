@@ -14,7 +14,7 @@ namespace HousingPricePrediction
     {
       var context = new MLContext();
 
-      IDataView dataView = content.Data.LoadFromTextFile<HousingData>("Data/housing.csv", separatorChar: ',', hashHeader: true);
+      IDataView dataView = context.Data.LoadFromTextFile<HousingData>("Data/housing.csv", separatorChar: ',', hasHeader: true);
 
       var pipeline = context.Transforms.Concatenate("Feature", new[] { "Rooms", "Size"})
         .Append(context.Regression.Trainers.Sdca(labelColumnName: "Price", maximumNumberOfIterations: 100));
