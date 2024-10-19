@@ -12,7 +12,13 @@ namespace HousingPricePrediction
   {
     static void Main(string[] args)
     {
-        Console.WriteLine("Hello, World!");
+      var context = new MLContext();
+
+      IDataView dataView = content.Data.LoadFromTextFile<HousingData>("Data/housing.csv", separatorChar: ',', hashHeader: true);
+
+
+
+
     }
   }
 }
