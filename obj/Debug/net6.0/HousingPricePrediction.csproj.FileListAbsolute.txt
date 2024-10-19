@@ -1,0 +1,5 @@
+C:\HjemmeKode\C-Sharp\C-Sharp\ML.NET\ML.NET-Test\obj\Debug\net6.0\HousingPricePrediction.GeneratedMSBuildEditorConfig.editorconfig
+C:\HjemmeKode\C-Sharp\C-Sharp\ML.NET\ML.NET-Test\obj\Debug\net6.0\HousingPricePrediction.AssemblyInfoInputs.cache
+C:\HjemmeKode\C-Sharp\C-Sharp\ML.NET\ML.NET-Test\obj\Debug\net6.0\HousingPricePrediction.AssemblyInfo.cs
+C:\HjemmeKode\C-Sharp\C-Sharp\ML.NET\ML.NET-Test\obj\Debug\net6.0\HousingPricePrediction.csproj.CoreCompileInputs.cache
+C:\HjemmeKode\C-Sharp\C-Sharp\ML.NET\ML.NET-Test\obj\Debug\net6.0\HousingPricePrediction.sourcelink.json
